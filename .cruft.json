@@ -1,0 +1,23 @@
+{
+  "template": "https://github.com/python-boltons/cc-python",
+  "commit": "68f948675176f6e01c47c5ee986855215e85c2bc",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "author": "Bryan M Bugyi",
+      "email": "bryanbugyi34@gmail.com",
+      "github_username": "bbugyi200",
+      "git_org_name": "bbugyi200",
+      "git_repo_name": "vimala",
+      "package_name": "vimala",
+      "pypi_package_name": "vimala",
+      "read_the_docs_domain": "vimala",
+      "package_description": "Python library for working with command-line editors (like vim).",
+      "package_type": "library",
+      "_template": "https://github.com/python-boltons/cc-python",
+      "package_path": "vimala",
+      "package_module": "vimala"
+    }
+  },
+  "directory": null
+}
