@@ -2,10 +2,10 @@
 
 import logging as _logging
 
-from ._core import dummy
+from ._vim import vim
 
 
-__all__ = ["dummy"]
+__all__ = ["vim"]
 
 __author__ = "Bryan M Bugyi"
 __email__ = "bryanbugyi34@gmail.com"
