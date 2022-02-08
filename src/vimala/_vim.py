@@ -6,16 +6,20 @@ module to add it to.
 
 from __future__ import annotations
 
-import subprocess as sp
 from typing import Iterable
 
+from eris import ErisResult
+import proctor
 from typist import PathLike
 
 
 def vim(
-    *args: PathLike, lineno: int = None, commands: Iterable[str] = ()
-) -> int:
-    """Execute `vim`.."""
+    *args: PathLike,
+    lineno: int = None,
+    commands: Iterable[str] = (),
+    vim_exe: PathLike = "vim",
+) -> ErisResult[proctor.Process]:
+    """Execute `vim`."""
     extra_args: list[str] = []
     if lineno is not None:
         extra_args.append(f"+{lineno}")
@@ -23,7 +27,6 @@ def vim(
     for cmd in commands:
         extra_args.extend(["-c", cmd])
 
-    cmd_args = [str(x) for x in ["vim", *args, *extra_args]]
-    popen = sp.Popen(cmd_args)
-    popen.communicate()
-    return popen.returncode
+    cmd_args = [str(x) for x in [vim_exe, *args, *extra_args]]
+    proc = proctor.safe_popen(cmd_args)
+    return proc
