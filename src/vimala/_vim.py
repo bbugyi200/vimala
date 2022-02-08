@@ -14,7 +14,7 @@ from typist import PathLike
 
 def vim(
     *args: PathLike, lineno: int = None, commands: Iterable[str] = ()
-) -> sp.Popen:
+) -> int:
     """Execute `vim`.."""
     extra_args: list[str] = []
     if lineno is not None:
@@ -25,4 +25,5 @@ def vim(
 
     cmd_args = [str(x) for x in ["vim", *args, *extra_args]]
     popen = sp.Popen(cmd_args)
-    return popen
+    popen.communicate()
+    return popen.returncode
