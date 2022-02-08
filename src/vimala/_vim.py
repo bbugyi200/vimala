@@ -9,9 +9,11 @@ from __future__ import annotations
 import subprocess as sp
 from typing import Iterable
 
+from typist import PathLike
+
 
 def vim(
-    *args: str, lineno: int = None, commands: Iterable[str] = ()
+    *args: PathLike, lineno: int = None, commands: Iterable[str] = ()
 ) -> sp.Popen:
     """Execute `vim`.."""
     extra_args: list[str] = []
@@ -21,6 +23,6 @@ def vim(
     for cmd in commands:
         extra_args.extend(["-c", cmd])
 
-    cmd_args = ["vim", *args, *extra_args]
+    cmd_args = [str(x) for x in ["vim", *args, *extra_args]]
     popen = sp.Popen(cmd_args)
     return popen
