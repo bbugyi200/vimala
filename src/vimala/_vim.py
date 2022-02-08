@@ -28,5 +28,5 @@ def vim(
         extra_args.extend(["-c", cmd])
 
     cmd_args = [str(x) for x in [vim_exe, *args, *extra_args]]
-    proc = proctor.safe_popen(cmd_args, stdout=None, stderr=None)
+    proc = proctor.safe_popen(cmd_args, stdout=None, stderr=None, timeout=None)
     return proc
