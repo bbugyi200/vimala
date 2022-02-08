@@ -10,7 +10,7 @@ bolton-ion==0.1.0
     # via bolton-eris
 bolton-metaman==0.1.1
     # via bolton-eris
-bolton-proctor==0.2.0
+bolton-proctor==0.2.1
     # via -r requirements.in
 bolton-typist==0.2.0
     # via
