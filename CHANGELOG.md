@@ -14,7 +14,7 @@ The format is based on [Keep a Changelog], and this project adheres to
 No notable changes have been made.
 
 
-## [0.1.1](https://github.com/bbugyi200/vimala/compare/0.1.0...0.1.1) - 2022-02-07 (DELETED VERSION)
+## [0.1.1](https://github.com/bbugyi200/vimala/compare/0.1.0...0.1.1) - 2022-02-07
 
 ### Added
 
