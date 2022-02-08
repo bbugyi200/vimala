@@ -9,16 +9,9 @@ The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning]: https://semver.org/
 
 
-## [Unreleased](https://github.com/bbugyi200/vimala/compare/0.1.3...HEAD)
+## [Unreleased](https://github.com/bbugyi200/vimala/compare/0.1.2...HEAD)
 
 No notable changes have been made.
-
-
-## [0.1.3](https://github.com/bbugyi200/vimala/compare/0.1.2...0.1.3) - 2022-02-08
-
-### Fixed
-
-* Remove timeout from `vim` subprocess.
 
 
 ## [0.1.2](https://github.com/bbugyi200/vimala/compare/0.1.1...0.1.2) - 2022-02-08
@@ -26,6 +19,7 @@ No notable changes have been made.
 ### Fixed
 
 * Fix `vim()` function blocking forever.
+* Remove timeout from `vim` subprocess.
 
 
 ## [0.1.1](https://github.com/bbugyi200/vimala/compare/0.1.0...0.1.1) - 2022-02-07
